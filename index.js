@@ -4,6 +4,6 @@ const stringCalculator = {
       const parts = numbers.split(",");
       return parts.reduce((sum, num) => sum + parseInt(num), 0);
     }
-  };
+};
   
-  module.exports = stringCalculator;  
+module.exports = stringCalculator;

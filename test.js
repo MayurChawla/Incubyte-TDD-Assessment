@@ -24,4 +24,7 @@ test('Add - Handles new line as a delimiter', () => {
 test('Add - Support different delimiters', () => {
     expect(stringCalculator.add("//;\n1;2")).toBe(3);
 });
-  
+
+test('Add - Throws error for negative numbers', () => {
+    expect(() => stringCalculator.add("1,-2,3,-3")).toThrow("Negatives not allowed: -2");
+});

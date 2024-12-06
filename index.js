@@ -1,10 +1,9 @@
 const stringCalculator = {
-    add : (numbers) => {
-      if (numbers === ""){
-        return 0;
-      }
-      return 0;
+    add: (numbers) => {
+      if (numbers === "") return 0;
+      const parts = numbers.split(",");
+      return parts.reduce((sum, num) => sum + parseInt(num), 0);
     }
-};
+  };
   
-module.exports = stringCalculator;
+  module.exports = stringCalculator;  

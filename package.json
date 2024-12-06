@@ -1,0 +1,15 @@
+{
+  "name": "incubyte-tdd-assessment",
+  "author": "Mayur Chawla",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "description": "incubyte-tdd-assessment task",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

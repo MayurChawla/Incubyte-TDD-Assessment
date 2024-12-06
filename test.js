@@ -16,3 +16,8 @@ test('Add - Two numbers return total sum', () => {
 test('Add - Multiple numbers return their sum', () => {
     expect(stringCalculator.add("1,2,3,4,5,6,7,8,9")).toBe(45);
 });
+
+test('Add - Handles new line as a delimiter', () => {
+    expect(stringCalculator.add("1\n2,3")).toBe(6);
+});
+

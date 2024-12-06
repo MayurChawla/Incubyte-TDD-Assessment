@@ -21,3 +21,7 @@ test('Add - Handles new line as a delimiter', () => {
     expect(stringCalculator.add("1\n2,3")).toBe(6);
 });
 
+test('Add - Support different delimiters', () => {
+    expect(stringCalculator.add("//;\n1;2")).toBe(3);
+});
+  

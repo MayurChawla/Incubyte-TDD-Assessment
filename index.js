@@ -1,8 +1,13 @@
 const stringCalculator = {
     add: (numbers) => {
         if (numbers === "") return 0;
-        const delimiters = [',', '\n'];
-
+        let delimiters = [',', '\n'];
+        if (numbers.startsWith("//")) {
+            const customDelimiter = numbers[2];
+            delimiters = [customDelimiter.toString()]
+            numbers = numbers.substring(4);
+        }
+      
         let parts = [numbers];
         delimiters.forEach(delimiter => {
             parts = parts.map(part => part.split(delimiter));

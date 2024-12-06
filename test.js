@@ -12,3 +12,7 @@ test('Add - Single number returns that same number', () => {
 test('Add - Two numbers return total sum', () => {
     expect(stringCalculator.add("1,2")).toBe(3);
 });
+
+test('Add - Multiple numbers return their sum', () => {
+    expect(stringCalculator.add("1,2,3,4,5,6,7,8,9")).toBe(45);
+});

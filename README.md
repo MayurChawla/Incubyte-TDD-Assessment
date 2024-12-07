@@ -82,19 +82,19 @@ The `test` folder contains file(s) related to testing this particular project. I
 ---
 
 ## Key Outcomes
-1. Initial Test Suite: I started by creating an initial set of test cases, each focusing on a specific feature of the String Calculator. These tests helped define how the calculator should behave.
+1. **Initial Test Suite**: I started by creating an initial set of test cases, each focusing on a specific feature of the String Calculator. These tests helped define how the calculator should behave.
 
-2. Failed Test Cases: Following TDD principles, I ran the test suite expecting all tests to fail since the functionality was not implemented yet. This step highlighted the gaps in the code.
+2. **Failed Test Cases**: Following TDD principles, I ran the test suite expecting all tests to fail since the functionality was not implemented yet. This step highlighted the gaps in the code.
 
-3. Code Implementation: After confirming the failed tests, I began implementing the features of the String Calculator one by one. The focus was on writing simple and clear code to make each test pass.
+3. **Code Implementation**: After confirming the failed tests, I began implementing the features of the String Calculator one by one. The focus was on writing simple and clear code to make each test pass.
 
-4. Refactoring Process: Once a feature was implemented and the corresponding test passed, I refactored the code. This step improved code structure, readability, and efficiency while ensuring no tests broke during the process.
+4. **Refactoring Process**: Once a feature was implemented and the corresponding test passed, I refactored the code. This step improved code structure, readability, and efficiency while ensuring no tests broke during the process.
 
-5. Test Execution and Validation: After every code change or refactoring, I reran the tests to confirm everything worked as expected. This ensured the code was reliable and error-free.
+5. **Test Execution and Validation**: After every code change or refactoring, I reran the tests to confirm everything worked as expected. This ensured the code was reliable and error-free.
 
-6. All Tests Passed: Through multiple iterations of adding features and refining the code, I reached a point where all test cases passed successfully. This confirmed that the String Calculator met all the required functionality.
+6. **All Tests Passed**: Through multiple iterations of adding features and refining the code, I reached a point where all test cases passed successfully. This confirmed that the String Calculator met all the required functionality.
 
-7. **Final Features Delivered**:
+7. **Final Features Delivered**:  
     i. Create a simple String calculator with a method signature.  
     ii. Allow the add method to handle any amount of numbers.  
     iii. Allow the add method to handle new lines between numbers (instead of commas). ("1\n2,3" should return 6).  

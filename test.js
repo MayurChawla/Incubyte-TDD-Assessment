@@ -32,3 +32,7 @@ test('Add - Throws error for negative numbers', () => {
 test('Add - Numbers bigger than 1000 should be ignored', () => {
     expect(stringCalculator.add("2,1001")).toBe(2);
 });
+
+test('Add - Delimiters of any length are handled', () => {
+    expect(stringCalculator.add("//[***]\n1***2***3")).toBe(6);
+});

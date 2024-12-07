@@ -48,6 +48,19 @@ To set up the Test-Driven Development (TDD) environment for this project, follow
    ```
 ---
 
+## Logic
+
+This section explains how the string calculator works.
+
+below is string caluculator module
+```javascript
+
+```
+
+You can use this module -> function to expand the test cases as required.
+
+---
+
 ## Project Architecture
 
 Below is a simplified diagram to illustrate the project architecture:

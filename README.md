@@ -8,13 +8,13 @@
 - [Key Outcomes](#key-outcomes)
 ---
 ## How TDD work?
-Test-Driven Development (TDD) is a way to build software where you write tests before writing the actual code. Here's how it works:
-
+Test-Driven Development (TDD) is a way to build software where you write tests before writing the actual code. Here's how it works: 
 Write a test: Start with a test that shows what the code should do. At first, this test will fail because the code isn't written yet.
 Write just enough code: Add the smallest amount of code to make the test pass.
 Clean up the code: Improve the code’s design and structure (refactor) while making sure the test still passes.
 Repeat: Do these steps again for every new feature or function.
 TDD makes sure your code is clean, easy to manage, and works the way it should.
+
 ---
 
 ## Setup TDD Environment
@@ -94,16 +94,17 @@ The `test` folder contains file(s) related to testing this particular project. I
 
 6. All Tests Passed: Through multiple iterations of adding features and refining the code, I reached a point where all test cases passed successfully. This confirmed that the String Calculator met all the required functionality.
 
-7. Final Features Delivered:
-    i    - Create a simple String calculator with a method signature.
-    ii   - Allow the add method to handle any amount of numbers.
-    iii  - Allow the add method to handle new lines between numbers (instead of commas). ("1\n2,3" should return 6).
-    iv   - Support different delimiters.
-    v    - Calling add with a negative number will throw an exception: "negative numbers not allowed <negative_number>".
-    vi   - Numbers bigger than 1000 should be ignored, so adding 2 + 1001 = 2.
-    vii  - Delimiters can be of any length with the following format: “//[delimiter]\n” for example: “//[***]\n1***2***3” should return 6
-    viii - Allow multiple delimiters like this: “//[delim1][delim2]\n” for example “//[*][%]\n1*2%3” should return 6.
-    ix   - Handling multiple delimiters with length longer than one char
+7. **Final Features Delivered**:
+    i. Create a simple String calculator with a method signature.  
+    ii. Allow the add method to handle any amount of numbers.  
+    iii. Allow the add method to handle new lines between numbers (instead of commas). ("1\n2,3" should return 6).  
+    iv. Support different delimiters.  
+    v. Calling add with a negative number will throw an exception: "negative numbers not allowed <negative_number>".  
+    vi. Numbers bigger than 1000 should be ignored, so adding 2 + 1001 = 2.  
+    vii. Delimiters can be of any length with the following format: “//[delimiter]\n”. For example: “//[***]\n1***2***3” should return 6.  
+    viii. Allow multiple delimiters like this: “//[delim1][delim2]\n”. For example: “//[*][%]\n1*2%3” should return 6.  
+    ix. Handle multiple delimiters with a length longer than one character.  
+
 
 
 Here are some of the process outcomes Images

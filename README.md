@@ -47,18 +47,64 @@ To set up the Test-Driven Development (TDD) environment for this project, follow
    $ npm run test
    ```
 ---
+
+## Project Architecture
+
+Below is a simplified diagram to illustrate the project architecture:
+
+```
+Project Root
+├── src
+│   ├── index.js
+├── test
+│   ├── test.js
+└── README.md
+└── .gitignore
+└── package.json
+```
+
+This diagram represents the folder structure of the project, with index.js in the `src` folder and corresponding test files in the `src` folder. This organization ensures that each module is thoroughly tested using Jest.
+
+The project structure is organized as follows:
+
+### Modules Folder
+
+The `src` folder contains the core logic and functionality of the project. It consists of the following files:
+
+1. `index.js`: This file handles the logic for string sum.
+
+### Test Folder
+
+The `test` folder contains file(s) related to testing this particular project. It consists test.js:
+
+1. `test.js`: This file contains test cases for the `index.js` module(stringCalculator).
+
+---
+
 ## Key Outcomes
-1. Initial Test Suite: To kickstart the project, I began by creating an initial test suite consisting of 33 test cases. These test cases were carefully designed to cover various aspects of the Spacecraft's functionality.
+1. Initial Test Suite: I started by creating an initial set of test cases, each focusing on a specific feature of the String Calculator. These tests helped define how the calculator should behave.
 
-2. Failed Test Cases: In accordance with TDD principles, I initially ran the test suite, expecting all tests to fail since I had not yet implemented any code. The purpose of this step was to identify what was missing in the codebase.
+2. Failed Test Cases: Following TDD principles, I ran the test suite expecting all tests to fail since the functionality was not implemented yet. This step highlighted the gaps in the code.
 
-3. Code Implementation: After the initial test suite confirmed the absence of code, I started implementing the required functionality of Spacecraft. During this phase, I adhered to the principles of writing clean, modular, and maintainable code.
+3. Code Implementation: After confirming the failed tests, I began implementing the features of the String Calculator one by one. The focus was on writing simple and clear code to make each test pass.
 
-4. Refactoring Process: Once I had a working version of the code, I conducted iterative rounds of refactoring. This involved revisiting the code and making improvements to enhance code quality, readability, and efficiency while ensuring all tests still passed. The refactoring process was vital for long-term code maintainability.
+4. Refactoring Process: Once a feature was implemented and the corresponding test passed, I refactored the code. This step improved code structure, readability, and efficiency while ensuring no tests broke during the process.
 
-5. Test Execution and Validation: After each refactoring iteration, I reran the test suite to ensure that the changes did not introduce any regressions. This helped maintain confidence in the correctness of the codebase.
+5. Test Execution and Validation: After every code change or refactoring, I reran the tests to confirm everything worked as expected. This ensured the code was reliable and error-free.
 
-6. All Tests Passed: After multiple iterations of implementing and refactoring, I successfully achieved a state where all 33 test cases passed without failures or errors. This marked the completion of the project.
+6. All Tests Passed: Through multiple iterations of adding features and refining the code, I reached a point where all test cases passed successfully. This confirmed that the String Calculator met all the required functionality.
+
+7. Final Features Delivered:
+    i    - Create a simple String calculator with a method signature.
+    ii   - Allow the add method to handle any amount of numbers.
+    iii  - Allow the add method to handle new lines between numbers (instead of commas). ("1\n2,3" should return 6).
+    iv   - Support different delimiters.
+    v    - Calling add with a negative number will throw an exception: "negative numbers not allowed <negative_number>".
+    vi   - Numbers bigger than 1000 should be ignored, so adding 2 + 1001 = 2.
+    vii  - Delimiters can be of any length with the following format: “//[delimiter]\n” for example: “//[***]\n1***2***3” should return 6
+    viii - Allow multiple delimiters like this: “//[delim1][delim2]\n” for example “//[*][%]\n1*2%3” should return 6.
+    ix   - Handling multiple delimiters with length longer than one char
+
 
 Here are some of the process outcomes Images
 

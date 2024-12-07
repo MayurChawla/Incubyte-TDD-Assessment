@@ -47,3 +47,27 @@ To set up the Test-Driven Development (TDD) environment for this project, follow
    $ npm run test
    ```
 ---
+## Key Outcomes
+1. Initial Test Suite: To kickstart the project, I began by creating an initial test suite consisting of 33 test cases. These test cases were carefully designed to cover various aspects of the Spacecraft's functionality.
+
+2. Failed Test Cases: In accordance with TDD principles, I initially ran the test suite, expecting all tests to fail since I had not yet implemented any code. The purpose of this step was to identify what was missing in the codebase.
+
+3. Code Implementation: After the initial test suite confirmed the absence of code, I started implementing the required functionality of Spacecraft. During this phase, I adhered to the principles of writing clean, modular, and maintainable code.
+
+4. Refactoring Process: Once I had a working version of the code, I conducted iterative rounds of refactoring. This involved revisiting the code and making improvements to enhance code quality, readability, and efficiency while ensuring all tests still passed. The refactoring process was vital for long-term code maintainability.
+
+5. Test Execution and Validation: After each refactoring iteration, I reran the test suite to ensure that the changes did not introduce any regressions. This helped maintain confidence in the correctness of the codebase.
+
+6. All Tests Passed: After multiple iterations of implementing and refactoring, I successfully achieved a state where all 33 test cases passed without failures or errors. This marked the completion of the project.
+
+Here are some of the process outcomes Images
+
+![image](https://github.com/user-attachments/assets/de0409f7-c2b8-4d43-9306-79c44d61ac1e)
+
+
+![image](https://github.com/user-attachments/assets/bb3c86ce-7062-48ce-9b25-a4c668a772d1)
+
+Final Outcome :
+
+
+

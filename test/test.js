@@ -1,4 +1,4 @@
-const stringCalculator = require('./index.js');
+const stringCalculator = require('../src/index.js');
 
 //case 0
 test('Add - Empty string returns 0', () => {

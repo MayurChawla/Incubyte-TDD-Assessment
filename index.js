@@ -3,9 +3,15 @@ const stringCalculator = {
         if (numbers === "") return 0;
         let delimiters = [',', '\n'];
         if (numbers.startsWith("//")) {
-            const customDelimiter = numbers[2];
+            const delimiterSectionEnd = numbers.indexOf("\n");
+            let customDelimiter = numbers.substring(2, delimiterSectionEnd);
+            if (customDelimiter.startsWith("[") && customDelimiter.endsWith("]")) {
+                customDelimiter = customDelimiter.replaceAll("[", "").replaceAll("]", "")
+            } else {
+                customDelimiter = numbers[2];
+            }
             delimiters = [customDelimiter.toString()]
-            numbers = numbers.substring(4);
+            numbers = numbers.substring(delimiterSectionEnd + 1);
         }
 
         let parts = [numbers];

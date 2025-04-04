@@ -38,3 +38,8 @@ test('Add - Numbers bigger than 1000 should be ignored', () => {
 test('Add - Delimiters of any length are handled', () => {
     expect(stringCalculator.add("//[***]\n1***2***3")).toBe(6);
 });
+
+//case 8 - Support multiple delimiters
+test('Add - Support multiple custom delimiters', () => {
+    expect(stringCalculator.add("//[*][%]\n1*2%3")).toBe(6);
+});

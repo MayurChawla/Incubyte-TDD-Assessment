@@ -3,7 +3,8 @@ const stringCalculator = {
         if (numbers === "") {
             return 0;
         }
-        return 0;
+        const parts = numbers.split(",");
+        return parts.reduce((sum, num) => sum + parseInt(num), 0);
     }
 };
 

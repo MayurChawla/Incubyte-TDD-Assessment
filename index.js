@@ -5,15 +5,28 @@ const stringCalculator = {
         if (numbers.startsWith("//")) {
             const delimiterSectionEnd = numbers.indexOf("\n");
             let customDelimiter = numbers.substring(2, delimiterSectionEnd);
-            if (customDelimiter.startsWith("[") && customDelimiter.endsWith("]")) {
-                customDelimiter = customDelimiter.replaceAll("[", "").replaceAll("]", "")
+            if(customDelimiter.startsWith("[") && customDelimiter.endsWith("]")) {
+                let currentDelimiter = "";
+                let insideBrackets = false;
+                for (let char of customDelimiter) {
+                    if (char === '[') {
+                        insideBrackets = true;
+                        currentDelimiter = "";
+                    } else if (char === ']') {
+                        insideBrackets = false;
+                        if (currentDelimiter) {
+                            delimiters.push(currentDelimiter);
+                        }
+                    } else if (insideBrackets) {
+                        currentDelimiter += char;
+                    }
+                }
             } else {
-                customDelimiter = numbers[2];
+                delimiters.push(numbers[2]);
             }
-            delimiters = [customDelimiter.toString()]
             numbers = numbers.substring(delimiterSectionEnd + 1);
         }
-
+      
         let parts = [numbers];
         delimiters.forEach(delimiter => {
             parts = parts.map(part => part.split(delimiter));

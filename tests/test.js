@@ -13,3 +13,8 @@ test('Add - Single number returns that same number', () => {
 test('Add - Two numbers return total sum', () => {
     expect(stringCalculator.add("1,2")).toBe(3);
 });
+
+//case 3 - handle new lines between numbers
+test('Add - Handles new line as a delimiter', () => {
+    expect(stringCalculator.add("1\n2,3")).toBe(6);
+});

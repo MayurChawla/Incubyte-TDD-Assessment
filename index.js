@@ -18,7 +18,7 @@ const stringCalculator = {
             negatives = negatives.join(",")
             throw new Error(`Negatives not allowed: ${negatives}`);
         }
-        return parts.reduce((sum, num) => sum + parseInt(num), 0);
+        return parts.filter(num => num <= 1000).reduce((sum, num) => sum + parseInt(num), 0);
     }
 };
 

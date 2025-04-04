@@ -5,3 +5,11 @@ test('Add - Empty string returns 0', () => {
     let stringToPass = "";
     expect(stringCalculator.add(stringToPass)).toBe(0);
 });
+
+//case 2 - handle any amount of numbers
+test('Add - Single number returns that same number', () => {
+    expect(stringCalculator.add("5")).toBe(5);
+});
+test('Add - Two numbers return total sum', () => {
+    expect(stringCalculator.add("1,2")).toBe(3);
+});

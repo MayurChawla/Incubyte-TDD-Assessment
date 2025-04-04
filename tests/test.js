@@ -28,3 +28,8 @@ test('Add - Support different delimiters', () => {
 test('Add - Throws error for negative numbers', () => {
     expect(() => stringCalculator.add("1,-2,3,-3")).toThrow("Negatives not allowed: -2");
 });
+
+//case 6 - Numbers bigger than 1000 should be ignored
+test('Add - Numbers bigger than 1000 should be ignored', () => {
+    expect(stringCalculator.add("2,1001")).toBe(2);
+});

@@ -43,3 +43,8 @@ test('Add - Delimiters of any length are handled', () => {
 test('Add - Support multiple custom delimiters', () => {
     expect(stringCalculator.add("//[*][%]\n1*2%3")).toBe(6);
 });
+
+//case 9
+test('Add - Support multiple custom delimiters with varying lengths', () => {
+    expect(stringCalculator.add("//[***][%%]\n1***2%%3")).toBe(6);
+});
